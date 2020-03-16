@@ -1,0 +1,84 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+body {
+  font-size: 16px;
+  color: #090e1d;
+  font-family: "Nunito";
+  font-weight: 300;
+}
+#wrapper {
+	margin: auto;
+  background-color: #f5f5f5;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  
+}
+header {
+	padding: 20px 0;
+}
+.Top {
+  height: 121px;
+
+}
+.Top-Main {
+  height: 121px;
+  height: 36px;
+  padding-left: 390px;
+  background-color: #1a0e36;
+  
+}
+.Top-Mini-Head {
+  display: flex;
+}
+.Top-Mini-Head-Menu div  {
+  font-size: 12px;
+  font-family: "Nunito";
+  color: rgb(118, 118, 118);
+  display: inline;
+  line-height: 2;
+
+ 
+
+}
+.Top-Link {
+  display: flex;
+  height: calc(121px - 36px);
+  background-color: thistle;
+  padding: 20px;
+}
+.Top-Mini-Head-Menu div a {
+  color: rgb(118, 118, 118);
+  padding: 0 10px;
+}
+.Top-Mini-Head-Menu :hover {
+  border-bottom: white 1px solid;
+}
+.Top-Menu div {
+  display: inline;
+  vertical-align: middle;
+
+}
+.Top-Menu div a {
+  font-family: "Dosis";
+  color: rgb(9, 14, 29);
+  padding: 0 10px;
+  
+}
+.Top-Menu :hover {
+  background-color:#1a0e36;
+  color: white;
+  line-height: 28px;
+
+}
+
+.Top-Logo {
+  line-height: normal;
+  margin: 0px 5px 0px 0px;
+  float: left;
+ 
+  
+}
