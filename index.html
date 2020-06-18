@@ -1,60 +1,790 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Meteor</title>
-  <link rel="stylesheet" href="./public/css/style.css"/>
-  <link rel="stylesheet" href="https://teobyte.github.io/blues-icons/bz-icons/css/bz-icons.css"/>
-</head>
-<body>
-  <div id="wrapper">
-		<header>
-      <div class="Top">
-        <div class="Top-Main">
-          <div class="Top-Mini-Head">
-             <div class="Top-Mini-Head-Menu">
-                <div><a href="/home/">-5 C</a></div>
-                <div><a href="/services/">New York</a></div>
-                <div><a href="/partners/">Monday, March 6</a></div>
-                <div><a href="/customers/">Blog</a></div>
-                <div><a href="/projects/">Forums</a></div>
-                <div><a href="/careers/">Contact</a></div>
-                <div><a href="/careers/">Buy now!</a></div>
-              </div> 
-              <div class="Top-Mini-Head-SN">
-                <img src="./public/img/Forma-10.png">
-                <img src="./public/img/Forma-11.png">
-                <img src="./public/img/Forma-12.png">
-                <img src="./public/img/Forma-13.png">
-              </div>
-           </div>
 
-          
-          <div class="Top-Link">
-              <div class="Top-Logo">mete<img src="./public/img/Vector-Smart-Object.png">r</div>
-              <div class="Top-Menu">
-                <div><a href="/home/">Fashion</a></div>
-                <div><a href="/services/">Style Hunter</a></div>
-                <div><a href="/partners/">Lifestyle</a></div>
-                <div><a href="/customers/">Celebrity</a></div>
-                <div><a href="/projects/">Videos</a></div>
-                <div><a href="/careers/">Interviews</a></div>
-               </div>
-               <div class="content-2">
-                 <i style="cursor: pointer; font-size: 26px; vertical-align: middle;" class="bzi-magnifier"></i>
-                </div>
-            </div>
-          </div>
-        </div>
-      <!-- <div class="Top-News">
-        <div class="Top-News-1"></div>
-        <div class="Top-News-2"></div>
-        <div class="Top-News-3"></div>
-      </div> -->
-     </header>
-		<div id="heading"></div>
-		<aside></aside>
-		<section></section>
+<head>
+	<title>Meteor</title>
+	<link rel="stylesheet" href="./public/css/style.css" />
+	<link rel="stylesheet" href="https://teobyte.github.io/blues-icons/bz-icons/css/bz-icons.css" />
+	<link href="https://fonts.googleapis.com/css?family=Bangers|Roboto:400,700|Sonsie+One&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/teobyte/bluesrc/css/bz-core.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header_menu">
+				<div class="header_menu container">
+					<div class="header_small-menu">
+						<div>-5 C</div>
+						<div>New York</div>
+						<div>Monday, March 6</div>
+						<div><a href="/blog/">Blog</a></div>
+						<div><a href="/forums/">Forums</a></div>
+						<div><a href="/contsct/">Contact</a></div>
+						<div><a href="/buyNow/">Buy now!</a></div>
+					</div>
+					<div class="header_link">
+						<div><a href="/home/"><img src="./public/img/Forma-10.png"></a></div>
+						<div><a href="/home/"><img src="./public/img/Forma-11.png"></a></div>
+						<div><a href="/home/"><img src="./public/img/Forma-12.png"></a></div>
+						<div><a href="/home/"><img src="./public/img/Forma-13.png"></a></div>
+						<button class="header_sign-in">
+							<img src="./public/img/Forma-14.png">
+							Sign in
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="header_navigation container">
+				<div class="header_logo">
+					<div>mete<img src="./public/img/Vector-Smart-Object.png">r</div>
+				</div>
+				<div class="header_nav">
+					<div><a href="/home/">Fashion</a></div>
+					<div><a href="/services/">Style Hunter</a></div>
+					<div><a href="/partners/">
+							Lifestyle
+							<i style="vertical-align: middle;" class="bzi-chevron-down"></i></a>
+					</div>
+					<div><a href="/customers/">Celebrity</a></div>
+					<div><a href="/projects/">
+							Videos
+							<i style="vertical-align: middle;" class="bzi-chevron-down"></i></a>
+					</div>
+					<div><a href="/careers/">Interviews</a></div>
+				</div>
+				<div class="header-search">
+					<i class="bzi-magnifier"></i>
+				</div>
+			</div>
+			<div class="header-gradient">
+				<div class="header-left-gradient">
+					<div class="header-gradient__content-position">
+						<div>
+							<span class="header-left-gradient-category">StyleHunter</span>
+							<i style="font-weight: 800;" class="bzi-eye">336.4k</i>
+						</div>
+						<div class="header-gradient-item">
+							Congress Is About To Hand Over Your Personal Browsing Data
+						</div>
+						<div>Jhon | 2 hours ago</div>
+					</div>
+				</div>
+				<div class="header-middle-gradient">
+					<div class="header-gradient__content-position">
+						<div>
+							<span class="header-middle-gradient-category">Vogue</span>
+							<i style="font-weight: 800;" class="bzi-eye">36.6k</i>
+						</div>
+						<div class="header-gradient-item">
+							Congress Is About To Hand Over Your Personal Browsing Data
+						</div>
+						<div>Jhon | 2 hours ago</div>
+					</div>
+				</div>
+				<div class="header-right-gradient">
+					<div class="header-gradient__content-position">
+						<div>
+							<span class="header-right-gradient-category">Fashion</span>
+							<i style="font-weight: 800;" class="bzi-eye">89.6k</i>
+						</div>
+						<div class="header-gradient-item">
+							What to Wear: 9+ Cute Work Outfits to Wear This Summer
+						</div>
+						<div>Jhon | 2 hours ago</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<div class="bz-row">
+				<div class="bz-col mb12 mt8">
+					<div class="container_left-menu">
+						<div>Style Hunter</div>
+						<div class="container_left-menu-items">
+							<div><a href="/world/">WORLD</a></div>
+							<div><a href="/people/">PEOPLE</a></div>
+							<div><a href="/food/">FOOD</a></div>
+							<div><a href="/animals/">ANIMALS</a></div>
+						</div>
+
+					</div>
+					<div>
+						<img style="width: 100%;" src="./public/img/Line-1.png">
+					</div>
+					<div class="container_left-content-img"></div>
+					<div class="container_left-content-news">
+						<div>
+							<span class="container_left-content-category">Vogue</span>
+							<i style="font-weight: 800;" class="bzi-eye">36.6k</i>
+						</div>
+						<div class="container_left-content-news-item">
+							No, Really: Congress Is About To Hand Over Your Personal
+						</div>
+						<div class="container_left-content-published">Jhon | 2 hours ago</div>
+						<div class="container_left-content-text">
+							News is a direct tool of influence on public consciousness.
+							The goal of the news is to provide to the society objective information about a particular
+							event or action.
+						</div>
+					</div>
+					<div class="container_left-content-column-news">
+						<div class="container_first-column-news">
+							<div class="container_first-column-news-img"></div>
+							<div class="container_left-content-news">
+								<div>
+									<span class="container_left-category-fashion">Fashion</span>
+									<i style="font-weight: 800;" class="bzi-eye">12.3k</i>
+								</div>
+								<div class="container_left-item-fashion">
+									Chris Christie, New Jersey governor, enjoys beach
+								</div>
+								<div class="container_left-content-published">Jhon | 2 hours ago</div>
+								<div class="container_left-content-text">
+									Seven years after the Affordable Care act was enacted,
+									Republicans are trying to follow through on their...
+								</div>
+							</div>
+						</div>
+						<div class="container_second-column-news">
+							<div class="container_first-column-news">
+								<div class="container_first-column-news-img"></div>
+								<div class="container_left-content-news">
+									<div>
+										<span class="container_left-category-helth">Helth</span>
+										<i style="font-weight: 800;" class="bzi-eye">55.4k</i>
+									</div>
+									<div class="container_left-item-fashion">
+										If you wanted to get rich, how would you do it?
+									</div>
+									<div class="container_left-content-published">Jhon | 2 hours ago</div>
+									<div class="container_left-content-text">
+										Seven years after the Affordable Care act was enacted,
+										Republicans are trying to follow through on their...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bz-col mb12 mt4">
+					<div class="bz-col mb12 mt12">
+						<div class="container_right-popular-post-name">
+							Popular Post
+						</div>
+						<div class="container_right-popular-post-gradient">
+							<div class="container_right-popular-post-position">
+								<div>
+									<span class="header-middle-gradient-category">Vogue</span>
+									<i style="font-weight: 800;" class="bzi-eye">36.6k</i>
+								</div>
+								<div class="header-gradient-item">
+									What to Wear: 9+ Cute Work Outfits to Wear This Summer
+								</div>
+								<div>Jhon | 2 hours ago</div>
+							</div>
+						</div>
+					</div>
+					<div class="bz-row mb-around bz-padding-16">
+						<div class="networks">
+							<div class="container_right-networks">
+								<a href="https://www.facebook.com">
+									<div class="container_right-facebook">
+										<div class="container_right-network-circle">
+											<div><img src="./public/img/icon_facebook.png"></div>
+										</div>
+										<div class="container_right-network-text">
+											894.6K
+											<div>Fans</div>
+										</div>
+									</div>
+								</a>
+								<a href="https://twitter.com">
+									<div class="container_right-twitter">
+										<div class="container_right-network-circle">
+											<div><img src="./public/img/icon_twitter.png"></div>
+										</div>
+										<div class="container_right-network-text">
+											345.7K
+											<div>Followers</div>
+										</div>
+									</div>
+								</a>
+								<a href="https://www.google.com">
+									<div class="container_right-google">
+										<div class="container_right-network-circle">
+											<div><img src="./public/img/icon_google.png"></div>
+										</div>
+										<div class="container_right-network-text">
+											679.4K
+											<div>Followers</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="container_right-networks">
+								<a href="https://www.youtube.com">
+									<div class="container_right-youtube">
+										<div class="container_right-network-circle">
+											<div><img src="./public/img/icon_youtube.png"></div>
+										</div>
+										<div class="container_right-network-text">
+											125.4K
+											<div>Fans</div>
+										</div>
+									</div>
+								</a>
+								<a href="https://www.instagram.com">
+									<div class="container_right-inst">
+										<div class="container_right-network-circle">
+											<div><img src="./public/img/icon_inst.png"></div>
+										</div>
+										<div class="container_right-network-text">
+											279.4K
+											<div>Followers</div>
+										</div>
+									</div>
+								</a>
+								<a href="https://www.vk.com">
+									<div class="container_right-vk">
+										<div class="container_right-network-circle">
+											<div><img src="./public/img/icon_vk.png"></div>
+										</div>
+										<div class="container_right-network-text">
+											79.4K
+											<div>Followers</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="container_right-popular-post">
+
+							<div class="container_right-popular-post-items">
+								<div>
+									<div class="container_left-content-articles-square"></div>
+									<div>
+										<div class="container_left-articles-text">
+											Scarlett’s disappointment at latest accolade
+										</div>
+										<div class="container_left-content-published">Jhon | 2 hours ago</div>
+									</div>
+								</div>
+								<div>
+									<div class="container_left-content-articles-square"></div>
+									<div>
+										<div class="container_left-articles-text">
+											Most Beautiful Things to Do in Sidney with Your BF
+										</div>
+										<div class="container_left-content-published">Jhon | 2 hours ago</div>
+									</div>
+								</div>
+								<div>
+									<div class="container_left-content-articles-square"></div>
+									<div>
+										<div class="container_left-articles-text">
+											Life’s challenges force us to harden up
+										</div>
+										<div class="container_left-content-published">Jhon | 2 hours ago</div>
+									</div>
+								</div>
+								<div>
+									<div class="container_left-content-articles-square"></div>
+									<div>
+										<div class="container_left-articles-text">
+											9 Wireless Headphones Must Have For High-R
+										</div>
+										<div class="container_left-content-published">Jhon | 2 hours ago</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bz-row">
+				<div class="bz-col mb12 mt8">
+					<div class="container_left-menu-life-style">
+						<div>Life Style</div>
+						<div class="container_left-menu-items-life-style">
+							<div><a href="/world/">WORLD</a></div>
+							<div><a href="/people/">PEOPLE</a></div>
+							<div><a href="/food/">FOOD</a></div>
+							<div><a href="/animals/">ANIMALS</a></div>
+						</div>
+					</div>
+					<div>
+						<img src="./public/img/Line-2.png">
+					</div>
+					<div class="container_left-content">
+						<div class="container_left-content-img"></div>
+						<div class="container_left-content-news">
+							<div>
+								<span class="container_left-content-category-life-style">Vogue</span>
+								<i style="font-weight: 800;" class="bzi-eye">132.3k</i>
+							</div>
+							<div class="container_left-content-news-item-life-style">
+								No, Really: Congress Is About To Hand Over Your Personal
+							</div>
+							<div class="container_left-content-published">Jhon | 2 hours ago</div>
+							<div class="container_left-content-text">
+								News is a direct tool of influence on public consciousness.
+								The goal of the news is to provide to the society objective information about a
+								particular event or action.
+							</div>
+						</div>
+					</div>
+					<div class="container_left-content-articles">
+						<div class="container_left-content-articles-length">
+							<div class="container_left-content-articles-square"></div>
+							<div>
+								<div class="container_left-articles-text">
+									Scarlett’s disappointment at latest accolade
+								</div>
+								<div class="container_left-articles-published">Jhon | 2 hours ago</div>
+							</div>
+						</div>
+						<div class="container_left-content-articles-length">
+							<div class="container_left-content-articles-square"></div>
+							<div>
+								<div class="container_left-articles-text">
+									Accompany Your Trips, in The Blue Sky
+								</div>
+								<div class="container_left-content-published">Jhon | 2 hours ago</div>
+							</div>
+						</div>
+					</div>
+					<div class="container_left-content-articles">
+						<div class="container_left-content-articles-length">
+							<div class="container_left-content-articles-square"></div>
+							<div>
+								<div class="container_left-articles-text">
+									Most Beautiful Things to Do in Sidney with Your BF
+								</div>
+								<div class="container_left-content-published">Jhon | 2 hours ago</div>
+							</div>
+						</div>
+						<div class="container_left-content-articles-length">
+							<div class="container_left-content-articles-square"></div>
+							<div>
+								<div class="container_left-articles-text">
+									Summer Travel Fashion, Your Holiday Choice
+								</div>
+								<div class="container_left-content-published">Jhon | 2 hours ago</div>
+							</div>
+						</div>
+					</div>
+					<div class="container_left-content-articles">
+						<div class="container_left-content-articles-length">
+							<div class="container_left-content-articles-square"></div>
+							<div>
+								<div class="container_left-articles-text">
+									Have Fun in The Morning With a Cup of Coffee
+								</div>
+								<div class="container_left-content-published">Jhon | 2 hours ago</div>
+							</div>
+						</div>
+						<div class="container_left-content-articles-length">
+							<div class="container_left-content-articles-square"></div>
+							<div>
+								<div class="container_left-articles-text">
+									Life’s challenges force us to harden up
+								</div>
+								<div class="container_left-content-published">Jhon | 2 hours ago</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bz-col mb12 mt4">
+					<div class="container_right-life-style bz-row mb-around bz-padding-16">
+						<div class="container_right-life-style-networks-background">
+							<div class="container_right-life-style-networks-name">
+								That is an amazing shot
+							</div>
+							<div class="container_right-life-style-networks-text">
+								Follow us on Instagram to get latest inspiration of fashion.
+							</div>
+						</div>
+						<div class="container_right-life-style-networks-background">
+							<div class="container_right-life-style-networks-inst">
+								<div><img src="./public/img/inst.png"></div>
+								<div>
+									Instagram
+								</div>
+							</div>
+							<div class="container_right-life-style-networks-text">
+								Follow us on Instagram to get latest inspiration of fashion.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bz-row">
+				<div class="bz-col mb12 mt8">
+					<div class="container_left-menu">
+						<div>Celebrity</div>
+						<div class="container_left-menu-items">
+							<div><a href="/world/">WORLD</a></div>
+							<div><a href="/people/">PEOPLE</a></div>
+							<div><a href="/food/">FOOD</a></div>
+							<div><a href="/animals/">ANIMALS</a></div>
+						</div>
+					</div>
+					<div>
+						<img src="./public/img/Line-1.png"></a>
+					</div>
+					<div class="container_left-content-column-news">
+						<div class="container_first-column-news">
+							<div class="container_first-column-news-img"></div>
+							<div class="container_left-content-news">
+								<div>
+									<span class="container_left-category-fashion">Model</span>
+									<i style="font-weight: 800;" class="bzi-eye">768.4k</i>
+								</div>
+								<div class="container_left-item-fashion">
+									If you wanted to get rich, how would you do it?
+								</div>
+								<div class="container_left-content-published">Jhon | 2 hours ago</div>
+								<div class="container_left-content-text">
+									Seven years after the Affordable Care act was enacted,
+									Republicans are trying to follow through on their...
+								</div>
+							</div>
+						</div>
+						<div class="container_second-column-news">
+							<div class="container_first-column-news">
+								<div class="container_first-column-news-img"></div>
+								<div class="container_left-content-news">
+									<div>
+										<span class="container_left-category-helth">Lifestyle</span>
+										<i style="font-weight: 800;" class="bzi-eye">768.4k</i>
+									</div>
+									<div class="container_left-item-fashion">
+										Playing the Guitar a Smiling, Happy Family
+									</div>
+									<div class="container_left-content-published">Jhon | 2 hours ago</div>
+									<div class="container_left-content-text">
+										Seven years after the Affordable Care act was enacted,
+										Republicans are trying to follow through on their...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container_left-content-column-news">
+						<div class="container_first-column-news">
+							<div class="container_first-column-news-img"></div>
+							<div class="container_left-content-news">
+								<div>
+									<span class="container_left-category-fashion">Fashion</span>
+									<i style="font-weight: 800;" class="bzi-eye">132.3k</i>
+								</div>
+								<div class="container_left-item-fashion">
+									Chris Christie, New Jersey governor, enjoys beach
+								</div>
+								<div class="container_left-content-published">Jhon | 2 hours ago</div>
+								<div class="container_left-content-text">
+									Seven years after the Affordable Care act was enacted,
+									Republicans are trying to follow through on their...
+								</div>
+							</div>
+						</div>
+						<div class="container_left-content-column-items">
+							<div>
+								<div class="container_left-content-articles-square"></div>
+								<div>
+									<div class="container_left-articles-text">
+										Imagine Losing 20 Pounds In 14 Days!
+									</div>
+									<div class="container_left-content-published">Jhon | 2 hours ago</div>
+								</div>
+							</div>
+							<div>
+								<div class="container_left-content-articles-square"></div>
+								<div>
+									<div class="container_left-articles-text">
+										Seven Food Tips You Need To Learn Now
+									</div>
+									<div class="container_left-content-published">Jhon | 2 hours ago</div>
+								</div>
+							</div>
+							<div>
+								<div class="container_left-content-articles-square"></div>
+								<div>
+									<div class="container_left-articles-text">
+										Tips For Increasing Employee Motivation
+									</div>
+									<div class="container_left-content-published">Jhon | 2 hours ago</div>
+								</div>
+							</div>
+							<div>
+								<div class="container_left-content-articles-square"></div>
+								<div>
+									<div class="container_left-articles-text">
+										Imagine Losing 20 Pounds In 14 Days!
+									</div>
+									<div class="container_left-content-published">Jhon | 2 hours ago</div>
+								</div>
+							</div>
+							<div>
+								<div class="container_left-content-articles-square"></div>
+								<div>
+									<div class="container_left-articles-text">
+										Seven Food Tips You Need To Learn Now
+									</div>
+									<div class="container_left-content-published">Jhon | 2 hours ago</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bz-col mb12 mt4">
+					<div class="container_right-life-style bz-row mb-around bz-padding-16">
+						<div class="container_right-life-style-networks-background">
+							<div class="container_right-life-style-networks-inst">
+								<div>
+									Instagram
+								</div>
+							</div>
+							<div class="container_right-life-style-networks-text">
+								Follow us on Instagram to get latest inspiration of fashion.
+							</div>
+						</div>
+						<div class="container_right-life-style-networks-background right-celebrity-network">
+							<div class="container_right-life-style-networks-name">
+								That is an amazing shot
+							</div>
+							<div class="container_right-life-style-networks-text">
+								Follow us on Instagram to get latest inspiration of fashion.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bz-row">
+				<div class="bz-col mb12 mt8">
+					<div class="container_left-video">
+						<div>Videos</div>
+						<div class="container_left-menu-items-video">
+							<div><a href="/world/">WORLD</a></div>
+							<div><a href="/people/">PEOPLE</a></div>
+							<div><a href="/food/">FOOD</a></div>
+							<div><a href="/animals/">ANIMALS</a></div>
+						</div>
+					</div>
+					<div>
+						<img src="./public/img/Line-3.png">
+					</div>
+					<div>
+						<iframe width="100%" height="430" src="https://www.youtube.com/embed/ndl1W4ltcmg"
+							frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen>
+						</iframe>
+					</div>
+					<div class="container_left-content">
+						<div class="container_left-content-news">
+							<div>
+								<span class="container_left-content-category-life-style">Vogue</span>
+								<i style="font-weight: 800;" class="bzi-eye">132.3k</i>
+							</div>
+							<div class="container_left-content-news-item-life-style">
+								Date Night Outfits Inspired by Celebs
+							</div>
+							<div class="container_left-content-published">Jhon | 2 hours ago</div>
+							<div class="container_left-content-text">
+								News is a direct tool of influence on public consciousness.
+								The goal of the news is to provide to the society objective information about a
+								particular event or action.
+							</div>
+						</div>
+					</div>
+					<div class="container_left-content-articles">
+						<div class="container_left-content-articles-length">
+							<div class="container_left-content-articles-square"></div>
+							<div>
+								<div class="container_left-articles-text">
+									Scarlett’s disappointment at latest accolade
+								</div>
+								<div class="container_left-articles-published">Jhon | 2 hours ago</div>
+							</div>
+						</div>
+						<div class="container_left-content-articles-length">
+							<div class="container_left-content-articles-square"></div>
+							<div>
+								<div class="container_left-articles-text">
+									Scarlett’s disappointment at latest accolade
+								</div>
+								<div class="container_left-content-published">Jhon | 2 hours ago</div>
+							</div>
+						</div>
+					</div>
+					<div class="container_left-content-articles">
+						<div class="container_left-content-articles-length">
+							<div class="container_left-content-articles-square"></div>
+							<div>
+								<div class="container_left-articles-text">
+									Most Beautiful Things to Do in Sidney with Your BF
+								</div>
+								<div class="container_left-content-published">Jhon | 2 hours ago</div>
+							</div>
+						</div>
+						<div class="container_left-content-articles-length">
+							<div class="container_left-content-articles-square"></div>
+							<div>
+								<div class="container_left-articles-text">
+									Most Beautiful Things to Do in Sidney with Your BF
+								</div>
+								<div class="container_left-content-published">Jhon | 2 hours ago</div>
+							</div>
+						</div>
+					</div>
+					<div class="container_left-content-articles">
+						<div class="container_left-content-articles-length">
+							<div class="container_left-content-articles-square"></div>
+							<div>
+								<div class="container_left-articles-text">
+									Life’s challenges force us to harden up
+								</div>
+								<div class="container_left-content-published">Jhon | 2 hours ago</div>
+							</div>
+						</div>
+						<div class="container_left-content-articles-length">
+							<div class="container_left-content-articles-square"></div>
+							<div>
+								<div class="container_left-articles-text">
+									Life’s challenges force us to harden up
+								</div>
+								<div class="container_left-content-published">Jhon | 2 hours ago</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bz-col mb12 mt4">
+					<div class="container_right-life-style">
+						<div class="container_right-videos-networks-background">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container_footer">
+				<div class="footer_top bz-row">
+					<div class="footer_logo bz-col mb12 mt3">
+						<div class="footer_logo-text-top">
+							The Daily
+						</div>
+						mete<img src="./public/img/Footer-logo-1.png">r
+					</div>
+					<div class="bz-row bz-col mb12 mt9 footer_menu-top">
+						<div><a href="/blog/">Business</a></div>
+						<div><a href="/investing/">Investing</a></div>
+						<div><a href="/technology/">Technology</a></div>
+						<div><a href="/entrepreneurs/">Entrepreneurs</a></div>
+						<div><a href="/Oped/">Op/ed</a></div>
+						<div><a href="/leadership/">Leadership</a></div>
+						<div><a href="/lifestyle/">Lifestyle</a></div>
+						<div><a href="/lists/">Lists</a></div>
+						<div class="footer_language">
+							<form>
+								<select>
+									<option>English</option>
+									<option>Russian</option>
+									<option>Ukrainian</option>
+								</select>
+							</form>
+						</div>
+					</div>
+
+				</div>
+				<div>
+					<img class="footer-img-line" src="./public/img/Footer-line.png">
+				</div>
+				<div class="footer_middle bz-row">
+					<div class="footer_middle-text bz-col mb12 mt4">
+						meteor is your news, entertainment, music fashion website. We provide you with the latest
+						breaking news and videos straight from the entertainment industry.
+						<div class="footer_middle-networks-position">
+							<div class="footer_middle-networks twitter">
+								<img src="./public/img/icon_twitter-small.png">
+							</div>
+							<div class="footer_middle-networks facebook">
+								<img src="./public/img/icon_facebook-small.png">
+							</div>
+							<div class="footer_middle-networks dribble">
+								<img src="./public/img/icon_dribble-small.png">
+							</div>
+							<div class="footer_middle-networks instagram">
+								<img src="./public/img/icon_inst-small.png">
+							</div>
+							<div class="footer_middle-networks pinterest">
+								<img src="./public/img/icon_pinterest-small.png">
+							</div>
+						</div>
+					</div>
+					<div class="bz-col mb3 mt2">
+						<div><a href="/business/">Business</a></div>
+						<div><a href="/culture/">Culture</a></div>
+						<div><a href="/gadgets/">Gadgets</a></div>
+						<div><a href="/future/">Future</a></div>
+						<div><a href="/startups/">Startups</a></div>
+					</div>
+					<div class="bz-col mb3 mt2">
+						<div><a href="/stars/">Stars</a></div>
+						<div><a href="/screen/"> Screen</a></div>
+						<div><a href="/binge/">Binge</a></div>
+						<div><a href="/culture/">Culture</a></div>
+						<div><a href="/media/">Media</a></div>
+					</div>
+					<div class="bz-col mb3 mt2">
+						<div><a href="/45/">45</a></div>
+						<div><a href="/congress/">Congress</a></div>
+						<div><a href="/securityT/">SecurityT</a></div>
+						<div><a href="/heNine/">he Nine</a></div>
+						<div><a href="/trumpmerica/">Trumpmerica</a></div>
+					</div>
+					<div class="bz-col mb3 mt2">
+						<div><a href="/video/">Video</a></div>
+						<div><a href="/videonews/">Video news</a></div>
+						<div><a href="/featureshows/">Feature shows</a></div>
+						<div><a href="/HLN/">HLN</a></div>
+						<div><a href="/tvshows/">TV shows</a></div>
+						<div><a href="/tvschedule/">TV schedule</a></div>
+						<div><a href="/facesofcnnworldwide/">Faces of CNN Worldwide</a></div>
+					</div>
+				</div>
+				<div>
+					<img class="footer-img-line" src="./public/img/Footer-line.png">
+				</div>
+				<div class="footer_down">
+					<div class="footer_down-text">
+						© 2018 Themexpert Inc. TX Broadcasting System, Inc. All Rights Reserved.
+						<div>Meteor TX ™ & © 2018 Cable News Network.</div>
+					</div>
+					<div class="footer_down-meteor-text">
+						<span class="footer_down-meteor">meteor</span> International Edition +
+					</div>
+					<div class="footer_down-menu">
+						<div><a href="/termsandconditions/">Terms and Conditions</a></div>
+						<div><a href="/privacystatement/">Privacy Statement</a></div>
+						<div><a href="/marketdata/">Market Data</a></div>
+						<div><a href="/adChoices/">AdChoices</a></div>
+						<div><a href="/newslatter/">Newslatter</a></div>
+						<div><a href="/help/">Help</a></div>
+						<div><a href="/about Us/">About Us</a></div>
+						<div><a href="/meteornewsource/">Meteor Newsource</a></div>
+						<div><a href="/terms/">Terms</a></div>
+						<div><a href="/sitemap/">Site Map</a></div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
-	<footer></footer>
+	<aside></aside>
+	<section></section>
 </body>
+
 </html>
